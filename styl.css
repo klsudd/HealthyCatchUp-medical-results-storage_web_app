@@ -1,0 +1,342 @@
+:root {
+    --pastel-pink-light: #FFE5F0;
+    --pastel-pink-mid: #FFB3D9;
+    --pastel-pink-dark: #FF99CC;
+    --pastel-pink-accent: #FF80BF;
+}
+
+* {
+    text-align: center;
+}
+
+body {
+    background-color: var(--pastel-pink-light);
+    color: var(--pastel-pink-dark);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #f80f83;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: var(--pastel-pink-mid);
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: var(--pastel-pink-dark);
+    font-size: 1.3em;
+}
+
+p {
+    color: var(--pastel-pink-dark);
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+label {
+    color: var(--pastel-pink-dark);
+    font-weight: bold;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="datetime-local"],
+input[type="number"],
+select,
+textarea {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: var(--pastel-pink-dark);
+    border: 2px solid var(--pastel-pink-mid);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1em;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+    display: block;
+    margin: 10px auto;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime-local"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--pastel-pink-dark);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+button,
+input[type="submit"],
+input[type="reset"],
+.btn {
+    background-color: var(--pastel-pink-mid);
+    color: rgb(224, 24, 167);
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+.btn:hover {
+    background-color: var(--pastel-pink-dark);
+}
+
+button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+.btn:active {
+    background-color: var(--pastel-pink-accent);
+}
+
+.btn-primary {
+    background-color: var(--pastel-pink-dark);
+}
+
+.btn-primary:hover {
+    background-color: var(--pastel-pink-accent);
+}
+
+.btn-secondary {
+    background-color: var(--pastel-pink-mid);
+}
+
+.btn-secondary:hover {
+    background-color: var(--pastel-pink-dark);
+}
+
+.btn-success {
+    background-color: #B3E5B3;
+}
+
+.btn-success:hover {
+    background-color: #8FDB8F;
+}
+
+.btn-danger {
+    background-color: #FFB3B3;
+}
+
+.btn-danger:hover {
+    background-color: #FF8888;
+}
+
+.btn-default {
+    background-color: var(--pastel-pink-mid);
+}
+
+.btn-default:hover {
+    background-color: var(--pastel-pink-dark);
+}
+
+.btn-warning {
+    background-color: #FFD9B3;
+}
+
+.btn-warning:hover {
+    background-color: #FFC299;
+}
+
+.btn-info {
+    background-color: #B3E5FF;
+}
+
+.btn-info:hover {
+    background-color: #8FDAFF;
+}
+
+a {
+    color: var(--pastel-pink-dark);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: var(--pastel-pink-accent);
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--pastel-pink-mid);
+}
+
+table th {
+    background-color: var(--pastel-pink-mid);
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+table td {
+    padding: 10px;
+    border: 1px solid var(--pastel-pink-light);
+    color: var(--pastel-pink-dark);
+}
+
+table tr:nth-child(even) {
+    background-color: rgba(255, 230, 240, 0.5);
+}
+
+table tr:hover {
+    background-color: rgba(255, 200, 230, 0.5);
+}
+
+.alert {
+    padding: 15px;
+    margin: 20px auto;
+    border-radius: 5px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.alert-success {
+    background-color: #D4F1D4;
+    color: #2D5F2D;
+    border: 2px solid #B3E5B3;
+}
+
+.alert-danger {
+    background-color: #FFD9D9;
+    color: #8B0000;
+    border: 2px solid #FFB3B3;
+}
+
+.alert-info {
+    background-color: #D9E8FF;
+    color: #003D99;
+    border: 2px solid #B3D9FF;
+}
+
+.alert-warning {
+    background-color: #FFE8B3;
+    color: #8B6914;
+    border: 2px solid #FFD699;
+}
+
+.well {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--pastel-pink-mid);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+ul, ol {
+    display: inline-block;
+    text-align: left;
+}
+
+.lista {
+    color: var(--pastel-pink-dark);
+}
+
+li {
+    margin: 10px 0;
+    color: var(--pastel-pink-dark);
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: var(--pastel-pink-mid) !important;
+    border-bottom: 3px solid var(--pastel-pink-dark);
+    margin-bottom: 20px;
+}
+
+.navbar-default {
+    background-color: var(--pastel-pink-mid) !important;
+    border-color: var(--pastel-pink-dark) !important;
+}
+
+.navbar-brand {
+    color: white !important;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-nav > li > a {
+    color: white !important;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav > li > a:hover {
+    background-color: var(--pastel-pink-dark) !important;
+    color: white !important;
+}
+
+.navbar-nav > li.active > a {
+    background-color: var(--pastel-pink-dark) !important;
+    color: white !important;
+}
+
+.navbar-nav > li.active > a:hover {
+    background-color: var(--pastel-pink-accent) !important;
+}
+
+.navbar-toggle {
+    background-color: var(--pastel-pink-dark) !important;
+    border-color: white !important;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: white !important;
+}
+
+.navbar-toggle:hover {
+    background-color: var(--pastel-pink-accent) !important;
+}
+
